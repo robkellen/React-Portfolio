@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
   return (
     <nav class="navbar navbar-expand-lg navbar-light trn">
       <span class="navbar-brand mb-1 h1">
@@ -62,3 +63,5 @@ function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;
