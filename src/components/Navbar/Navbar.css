@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  z-index: 99;
+  background-color: #01355b;
+}
+/*shifting page links to the right of the navbar*/
+.navbar-right {
+  margin-left: auto;
+}
+
+/* adding color to links at top right of navbar */
+.nav-link {
+  color: #0b8911 !important;
+  font-weight: 300;
+  font-size: 20px;
+  float: right;
+}
+
+.navbar-toggler  {
+  color: #0b8911 !important;
+  border-color: #0b8911 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(11, 137, 17, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
