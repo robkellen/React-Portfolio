@@ -1,0 +1,27 @@
+
+.fa {
+  font-size: 36px;
+  color: #0b8911
+}
+
+.connect {
+  font-weight: 800;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+}
+/*centering text and icons in footer*/
+.text-center {
+  margin-top: 0;
+  padding-right: 10px;
+}
+
+.list-group {
+  display: inherit;
+}
+
+.list-group a {
+  padding-left: 5px;
+  padding-right: 5px;
+}

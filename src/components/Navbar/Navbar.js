@@ -1,30 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
+import brandLogo from "../../assets/BrandLogo.png";
 
 function Navbar() {
   const location = useLocation();
+  // using state to make hamburger toggle icon functional
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
-    <nav class="navbar navbar-expand-lg navbar-light trn">
-      <span class="navbar-brand mb-1 h1">
+    <nav className="navbar navbar-expand-lg navbar-light trn">
+      <span className="navbar-brand mb-1 h1">
         <a href="index.html">
-          <img src="./Assets/BrandLogo.png" alt="brand logo" />
+          <img src={brandLogo} alt="BrandLogo" />
         </a>
       </span>
       <button
-        class="navbar-toggler custom-toggler"
+        className="navbar-toggler custom-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
-        aria-expanded="false"
+        aria-expanded={!isNavCollapsed ? true : false}
         aria-label="Toggle navigation"
+        onClick={handleNavCollapse}
       >
-        <span class="navbar-toggler-icon custom-toggler"></span>
+        <span className="navbar-toggler-icon custom-toggler"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
+      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
+        <ul className="nav navbar-nav navbar-right">
+          <li className="nav-item">
             <Link
               to="/About"
               className={
@@ -34,7 +40,7 @@ function Navbar() {
               About
             </Link>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <Link
               to="/Portfolio"
               className={
@@ -46,7 +52,7 @@ function Navbar() {
               Portfolio
             </Link>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <Link
               to="/Contact"
               className={
