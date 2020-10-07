@@ -9,16 +9,19 @@
 }
 
 #sticky-footer {
+  background-color: #9a9a9a;
+  border-top: 10px solid #0b8911;
   flex-shrink: 0;
 }
 /*centering text and icons in footer*/
 .text-center {
+  color: #01355b;
   margin-top: 0;
   padding-right: 10px;
 }
 
 .list-group {
-  display: inherit;
+  display: inherit !important;
 }
 
 .list-group a {

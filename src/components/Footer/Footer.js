@@ -3,17 +3,17 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-      <div class="container text-center">
+    <footer id="sticky-footer" className="py-4 text-white-50">
+      <div className="container text-center">
         <medium className="connect">Connect with me:</medium>
         {/* Link to LinkedIn */}
-        <ul class="list-group list-group-horizontal">
+        <ul className="list-group list-group-horizontal">
           <a
             href="http://linkedin.com/in/robert-kellen-90a3951aa"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i id="linked-in" class="fa fa-linkedin-square"></i>
+            <i id="linked-in" className="fa fa-linkedin-square"></i>
           </a>
           {/* Link to my GitHub page */}
           <a
@@ -21,7 +21,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i id="github" class="fa fa-github"></i>
+            <i id="github" className="fa fa-github"></i>
           </a>
           {/* Link to my email */}
           <a
@@ -29,7 +29,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i id="email" class="fa fa-envelope-o"></i>
+            <i id="email" className="fa fa-envelope-o"></i>
           </a>
         </ul>
       </div>

@@ -12,9 +12,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light trn">
       <span className="navbar-brand mb-1 h1">
-        <a href="index.html">
+        <Link to="/Home" className={location.pathname === "/About"}>
           <img src={brandLogo} alt="BrandLogo" />
-        </a>
+        </Link>
       </span>
       <button
         className="navbar-toggler custom-toggler"
