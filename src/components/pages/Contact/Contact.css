@@ -1,14 +1,12 @@
-.bg {
-  background-color: #01355b;
-  height: 1350px;
+
+
+.container {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-}
-
-.container {
+  background-color: #01355b;
   margin-top: 150px;
 }
 

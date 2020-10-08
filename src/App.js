@@ -10,17 +10,18 @@ import About from "../src/components/pages/About/About";
 import Portfolio from "../src/components/pages/Portfolio/Portfolio";
 import Contact from "../src/components/pages/Contact/Contact";
 
-
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/About" component={About} />
-      <Route exact path="/Portfolio" component={Portfolio} />
-      <Route path="/Contact" component={Contact} />
-      <Footer />
+    <div>
+      <Router>
+        <Navbar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Portfolio" component={Portfolio} />
+        <Route path="/Contact" component={Contact} />
+        <Footer />
       </Router>
+    </div>
   );
 }
 
