@@ -12,6 +12,9 @@
   background-color: #9a9a9a;
   border-top: 10px solid #0b8911;
   flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
 /*centering text and icons in footer*/
 .text-center {

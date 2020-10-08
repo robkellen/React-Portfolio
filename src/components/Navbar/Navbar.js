@@ -9,12 +9,13 @@ function Navbar() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light trn">
+    <nav className="navbar navbar-expand-lg navbar-light trn"> 
       <span className="navbar-brand mb-1 h1">
-        <Link to="/Home" className={location.pathname === "/About"}>
+        <a href="/">
           <img src={brandLogo} alt="BrandLogo" />
-        </Link>
+        </a>
       </span>
       <button
         className="navbar-toggler custom-toggler"
@@ -28,7 +29,10 @@ function Navbar() {
       >
         <span className="navbar-toggler-icon custom-toggler"></span>
       </button>
-      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
+      <div
+        className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+        id="navbarSupportedContent"
+      > 
         <ul className="nav navbar-nav navbar-right">
           <li className="nav-item">
             <Link
