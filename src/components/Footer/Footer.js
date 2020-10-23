@@ -3,10 +3,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer  id="sticky-footer" className="py-4 sticky-bottom
-    text-white-50">
+    <footer
+      id="sticky-footer"
+      className="py-4 sticky-bottom
+    text-white-50"
+    >
       <div className="container text-center">
-        <p className="connect">Connect with me:</p>
         {/* Link to LinkedIn */}
         <ul className="list-group list-group-horizontal">
           <a

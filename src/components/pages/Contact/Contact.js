@@ -1,14 +1,16 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Contact.css";
+import Navbar from "../../Navbar/Navbar";
+import Footer from "../../Footer/Footer";
 
 function Contact() {
   return (
-    <Container className="container">
-      <Row className="row">
-        <Col className="card col-md-4">
-        
-         
+    <div>
+      <Navbar />
+      <Container className="container">
+        <Row className="row">
+          <Col className="card col-md-4">
             <div className="card-header">
               <h2>Rob Kellen</h2>
             </div>
@@ -49,9 +51,8 @@ function Contact() {
               </li>
               <br />
             </ul>
-         </Col>
-         <Col className="card">
-          
+          </Col>
+          <Col className="card">
             <div className="card-header">
               <h2>Contact</h2>
             </div>
@@ -87,10 +88,11 @@ function Contact() {
                 Submit
               </button>
             </form>
-          
-        </Col>
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
+    </div>
   );
 }
 

@@ -19,6 +19,11 @@
   float: right;
 }
 
+.nav-link-active {
+  background-color: #0b8911;
+  color: #01355b;
+}
+
 .navbar-toggler  {
   color: #0b8911 !important;
   border-color: #0b8911 !important;
