@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import brandLogo from "../../assets/BrandLogo.png";
 
 function Navbar() {
@@ -11,11 +11,11 @@ function Navbar() {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light trn"> 
+    <nav className="navbar navbar-expand-lg navbar-light trn">
       <span className="navbar-brand mb-1 h1">
-        <a href="/">
+        <Link href="/">
           <img src={brandLogo} alt="BrandLogo" />
-        </a>
+        </Link>
       </span>
       <button
         className="navbar-toggler custom-toggler"
@@ -32,41 +32,64 @@ function Navbar() {
       <div
         className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
         id="navbarSupportedContent"
-      > 
+      >
         <ul className="nav navbar-nav navbar-right">
           <li className="nav-item">
-            <Link
+            <NavLink
+              className="navLink"
               to="/About"
-              className={
-                location.pathname === "/About" ? "nav-link active" : "nav-link"
-              }
+              activeClassName="selected"
+              style={{
+                color: "#0b8911",
+                fontWeight: 300,
+                fontSize: "20px",
+                float: "right",
+              }}
+              activeStyle={{
+                textDecorationLine: "underline",
+                fontWeight: 500,
+              }}
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
+              className="navLink"
               to="/Portfolio"
-              className={
-                location.pathname === "/Portfolio"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
+              activeClassName="selected"
+              style={{
+                color: "#0b8911",
+                fontWeight: 300,
+                fontSize: "20px",
+                float: "right",
+              }}
+              activeStyle={{
+                textDecorationLine: "underline",
+                fontWeight: 500,
+              }}
             >
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
+              className="navLink"
               to="/Contact"
-              className={
-                location.pathname === "/Contact"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
+              activeClassName="selected"
+              style={{
+                color: "#0b8911",
+                fontWeight: 300,
+                fontSize: "20px",
+                float: "right",
+              }}
+              activeStyle={{
+                textDecorationLine: "underline",
+                fontWeight: 500,
+              }}
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
