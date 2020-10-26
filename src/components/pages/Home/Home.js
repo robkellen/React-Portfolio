@@ -1,8 +1,13 @@
 import React from "react";
+import {useSpring, animated} from "react-spring";
 
 function Home() {
+
+  //set up animation for main part of page
+  const props = useSpring({opacity: 1, from: {opacity: 0}})
+
   return(
-    <h1>Home!</h1>
+    <animated.h1 style={props}>Home!</animated.h1>
   )
 }
 

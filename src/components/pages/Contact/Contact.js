@@ -3,8 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
+import ContactForm from "../../ContactForm/ContactForm";
+
 
 function Contact() {
+
+  
+
   return (
     <div>
       <Navbar />
@@ -56,38 +61,7 @@ function Contact() {
             <div className="card-header">
               <h2>Contact</h2>
             </div>
-            <form>
-              <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Name"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="exampleFormControlInput1">Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="exampleFormControlTextarea1">Message</label>
-                <textarea
-                  className="form-control"
-                  id="exampleFormControlTextarea1"
-                  placeholder="Message"
-                  rows="3"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
-            </form>
+            <ContactForm />
           </Col>
         </Row>
       </Container>

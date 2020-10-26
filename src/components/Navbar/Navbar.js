@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import brandLogo from "../../assets/BrandLogo.png";
 
 function Navbar() {
-  const location = useLocation();
+  
   // using state to make hamburger toggle icon functional
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light trn">
       <span className="navbar-brand mb-1 h1">
-        <Link href="/">
+        <Link to="/">
           <img src={brandLogo} alt="BrandLogo" />
         </Link>
       </span>
@@ -46,7 +46,6 @@ function Navbar() {
                 float: "right",
               }}
               activeStyle={{
-                textDecorationLine: "underline",
                 fontWeight: 500,
               }}
             >
@@ -65,7 +64,6 @@ function Navbar() {
                 float: "right",
               }}
               activeStyle={{
-                textDecorationLine: "underline",
                 fontWeight: 500,
               }}
             >
@@ -84,7 +82,6 @@ function Navbar() {
                 float: "right",
               }}
               activeStyle={{
-                textDecorationLine: "underline",
                 fontWeight: 500,
               }}
             >
