@@ -1,6 +1,9 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
+
+.showBar{display:block}
+.hideBar{display:none;}
 
 .navbar {
   z-index: 99;

@@ -1,19 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Contact.css";
-import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import ContactForm from "../../ContactForm/ContactForm";
-
+import Fade from "react-reveal/Fade";
 
 function Contact() {
-
-  
-
   return (
-    <div>
-      <Navbar />
-      <Container className="container">
+    <div id="contact" style={{ minHeight: "100vh" }}>
+      <Container  className="container">
         <Row className="row">
           <Col className="card col-md-4">
             <div className="card-header">
@@ -65,7 +60,6 @@ function Contact() {
           </Col>
         </Row>
       </Container>
-      <Footer />
     </div>
   );
 }

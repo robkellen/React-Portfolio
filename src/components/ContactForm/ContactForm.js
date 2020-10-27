@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import { Form } from "react-bootstrap";
+import "./ContactForm.css"
 
 class ContactForm extends Component {
   state = {
@@ -47,39 +48,42 @@ class ContactForm extends Component {
     return (
       <Form onSubmit={this.sendMessage.bind(this)}>
         <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Name</label>
+          <label className="label" htmlFor="exampleInputEmail1">Name</label>
           <input
             type="text"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder="Name"
+            placeholder="Your Name"
             name="from_name"
             value={this.state.name}
             onChange={this.handleInputChange.bind(this, "name")}
+            required="I would like to be able to know who sent this!  Please enter your name."
           />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Email address</label>
+          <label className="label" htmlFor="exampleFormControlInput1">Email address</label>
           <input
             type="email"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder="Email"
+            placeholder="Email@email.com"
             name="email"
             value={this.state.email}
             onChange={this.handleInputChange.bind(this, "email")}
+            required="Don't you want me to be able to reply?  Please enter your email address."
           />
         </div>
         <div className="form-group">
-          <label htmlFor="exampleFormControlTextarea1">Message</label>
+          <label className="label" htmlFor="exampleFormControlTextarea1">Message</label>
           <textarea
             className="form-control"
             id="exampleFormControlTextarea1"
-            placeholder="Message"
+            placeholder="Enter your message..."
             rows="5"
             name="message"
             value={this.state.message}
             onChange={this.handleInputChange.bind(this, "message")}
+            required="Please don't leave me hanging!  Enter a message you wish to send."
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary">
@@ -89,5 +93,7 @@ class ContactForm extends Component {
     );
   }
 }
+
+// disabled={!(this.state.message && this.state.name && this.state.email)} 
 
 export default ContactForm;

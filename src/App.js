@@ -1,22 +1,39 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+import Fade from "react-reveal/Fade";
+import { Container } from "react-bootstrap";
 
 //importing all necessary components
 import Home from "../src/components/pages/Home/Home";
 import About from "../src/components/pages/About/About";
 import Portfolio from "../src/components/pages/Portfolio/Portfolio";
 import Contact from "../src/components/pages/Contact/Contact";
+import Footer from "../src/components/Footer/Footer";
+import Navbar from "../src/components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="mainDiv">
-      <Router>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Portfolio" component={Portfolio} />
-        <Route path="/Contact" component={Contact} />
-      </Router>
+      <Container style={{ minHeight: "100vh" }}>
+        <Home />
+      </Container>
+      <Navbar />
+      <div>
+        <Fade right>
+          <About />
+        </Fade>
+      </div>
+      <div>
+        <Fade up>
+          <Portfolio />
+        </Fade>
+      </div>
+      <div id="contact" >
+        <Fade left>
+          <Contact />
+        </Fade>
+        <Footer />
+      </div>
     </div>
   );
 }
