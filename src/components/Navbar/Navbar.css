@@ -16,6 +16,7 @@
 
 .navLink {
   margin: 5px;
+  cursor: pointer;
 }
 
 /* adding color to links at top right of navbar */
