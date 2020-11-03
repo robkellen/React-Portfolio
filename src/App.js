@@ -14,12 +14,12 @@ import Navbar from "../src/components/Navbar/Navbar";
 function App() {
   return (
     <div className="mainDiv">
-      <Container style={{ minHeight: "100vh" }}>
+      <div style={{ minHeight: "100vh" }}>
         <Home />
-      </Container>
+      </div>
       <Navbar />
       <div>
-        <Fade right>
+        <Fade up>
           <About />
         </Fade>
       </div>
@@ -28,11 +28,13 @@ function App() {
           <Portfolio />
         </Fade>
       </div>
-      <div id="contact" >
+      <div id="contact">
         <Fade left>
           <Contact />
         </Fade>
-        <Footer />
+        <Fade up>
+          <Footer />
+        </Fade>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function Navbar() {
   const [scrollPosition, setSrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
-    position >= 700 ? setBarVisibility(true) : setBarVisibility(false);
+    position >= 900 ? setBarVisibility(true) : setBarVisibility(false);
     setSrollPosition(position);
   };
 

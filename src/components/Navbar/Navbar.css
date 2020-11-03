@@ -7,7 +7,7 @@
 
 .navbar {
   z-index: 99;
-  background-color: #01355b;
+  background-color: rgb(1, 53, 91, 0.0);
 }
 /*shifting page links to the right of the navbar*/
 .navbar-right {
