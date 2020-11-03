@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "CampK9",
+    "image": "http://placekitten.com/200/200",
+    "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
+    "gitRepo": "https://github.com/Dmelcher16/camp",
+    "liveApp": "https://agile-garden-72992.herokuapp.com/home"
+  }
+]
