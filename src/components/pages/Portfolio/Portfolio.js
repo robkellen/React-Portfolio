@@ -3,11 +3,10 @@ import Project from "../../Project/Project";
 import { Container, Row, Col } from "react-bootstrap";
 import projects from "../../../projects.json";
 
-
 class Portfolio extends Component {
   // setting this.state.projects to the projects json array
   state = {
-    projects
+    projects,
   };
 
   render() {
@@ -20,17 +19,19 @@ class Portfolio extends Component {
                 <h1 className="card-title ">My Work:</h1>
                 <h5 className="card-text">Always in progress...</h5>
               </div>
-              {this.state.projects.map(project => (
-              <Project 
-                id={project.id}
-                key={project.id}
-                name={project.name}
-                image={project.image}
-                description={project.description}
-                gitRepo={project.gitRepo}
-                liveApp={project.liveApp}
-              />
-              ))}
+              <Row>
+                {this.state.projects.map((project) => (
+                  <Project
+                    id={project.id}
+                    key={project.id}
+                    name={project.name}
+                    image={project.image}
+                    description={project.description}
+                    gitRepo={project.gitRepo}
+                    liveApp={project.liveApp}
+                  />
+                ))}
+              </Row>
             </Col>
           </Row>
         </Container>

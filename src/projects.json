@@ -2,9 +2,41 @@
   {
     "id": 1,
     "name": "CampK9",
-    "image": "http://placekitten.com/200/200",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604509720/CampK9_w5jmsd.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/Dmelcher16/camp",
-    "liveApp": "https://agile-garden-72992.herokuapp.com/home"
+    "liveApp": "https://agile-garden-72992.herokuapp.com/"
+  },
+  {
+    "id": 2,
+    "name": "GameTracker",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604509505/GameTracker_x21ibo.png",
+    "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
+    "gitRepo": "https://github.com/robkellen/GameTracker",
+    "liveApp": "https://glacial-taiga-04215.herokuapp.com/"
+  },
+  {
+    "id": 3,
+    "name": "Employee Directory",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510115/EmployeeDirectory_vgzxhi.png",
+    "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
+    "gitRepo": "https://github.com/robkellen/Employee-Directory",
+    "liveApp": "https://nostalgic-colden-6ab752.netlify.app/"
+  },
+  {
+    "id": 4,
+    "name": "Budget Tracker",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510467/BudgetTracker_cjkdbs.png",
+    "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
+    "gitRepo": "https://github.com/robkellen/Budget-Tracker",
+    "liveApp": "https://powerful-bayou-97941.herokuapp.com/"
+  },
+  {
+    "id": 5,
+    "name": "Fitness Tracker",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510865/FitnessTracker_lo4yvu.png",
+    "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
+    "gitRepo": "https://github.com/robkellen/Fitness-Tracker",
+    "liveApp": "https://arcane-stream-21231.herokuapp.com/?id=5f7a5f5ec74b2f0017f6bd2e"
   }
 ]
