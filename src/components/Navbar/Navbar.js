@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light trn fixed-top">
         <span className="navbar-brand mb-1 h1">
           <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
-            <img src={brandLogo} alt="BrandLogo" />
+            <img id ="brand" src={brandLogo} alt="BrandLogo" />
           </Link>
         </span>
         <button

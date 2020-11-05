@@ -2,12 +2,30 @@
   box-sizing: border-box;
 } */
 
-.showBar{display:block}
-.hideBar{display:none;}
+.showBar {
+  display: block;
+}
+.hideBar {
+  display: none;
+}
 
 .navbar {
   z-index: 99;
-  background-color: rgb(1, 53, 91, 0.0);
+  background-color: rgb(1, 53, 91, 0);
+}
+
+#brand {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+
+ 
+  transition: 0.2s;
+}
+
+#brand:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 /*shifting page links to the right of the navbar*/
 .navbar-right {
@@ -17,22 +35,15 @@
 .navLink {
   margin: 5px;
   cursor: pointer;
+  overflow: hidden;
+  transition: 0.1s;
 }
 
-/* adding color to links at top right of navbar */
-/* .nav-link {
-  color: #0b8911 !important;
-  font-weight: 300;
-  font-size: 20px;
-  float: right;
+.navLink:hover {
+  transform:scale(1.05);
 }
 
-.activeStyle {
-  background-color: #0b8911 !important;
-  color: #01355b !important;
-} */
-
-.navbar-toggler  {
+.navbar-toggler {
   color: #0b8911 !important;
   border-color: #0b8911 !important;
 }

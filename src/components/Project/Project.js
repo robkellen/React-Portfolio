@@ -11,7 +11,7 @@ function Project(props) {
 
   return (
     <Col className="col sm-4 mb-4">
-      <Card className="text-center h-100" style={{ width: "20rem" }}>
+      <Card className="project-card text-center h-100" style={{ width: "20rem" }}>
         <img
           src={props.image}
           className="card-img-top"
@@ -39,7 +39,7 @@ function Project(props) {
         </Modal.Header>
         <div className="modal-body">
           <img
-            className="img-responsive img-center w-100"
+            className="img-responsive img-center h-100 w-100"
             src={props.image}
             alt={props.name}
           />

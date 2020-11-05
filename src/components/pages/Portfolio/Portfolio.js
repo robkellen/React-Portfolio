@@ -17,7 +17,6 @@ class Portfolio extends Component {
             <Col id="main-col" className="col-sm">
               <div className="main-header">
                 <h1 className="card-title ">My Work:</h1>
-                <h5 className="card-text">Always in progress...</h5>
               </div>
               <Row>
                 {this.state.projects.map((project) => (
