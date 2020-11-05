@@ -10,8 +10,8 @@ function Project(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <Col className="col mb-4">
-      <Card style={{ width: "20rem" }}>
+    <Col className="col sm-4 mb-4">
+      <Card className="text-center h-100" style={{ width: "20rem" }}>
         <img
           src={props.image}
           className="card-img-top"
@@ -37,8 +37,12 @@ function Project(props) {
         <Modal.Header closeButton>
           <Modal.Title id="custom-modal">{props.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="modal-body">
-          <img className="image-responsive" src={props.image} alt={props.name} />
+        <div className="modal-body">
+          <img
+            className="img-responsive img-center w-100"
+            src={props.image}
+            alt={props.name}
+          />
           <p>
             {" "}
             Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
@@ -49,7 +53,7 @@ function Project(props) {
             reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
             deleniti rem!
           </p>
-        </Modal.Body>
+        </div>
       </Modal>
     </Col>
   );
