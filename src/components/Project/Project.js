@@ -38,7 +38,7 @@ function Project(props) {
           <Modal.Title id="custom-modal">{props.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modal-body">
-          <img className="modal-image" src={props.image} alt={props.name} />
+          <img className="image-responsive" src={props.image} alt={props.name} />
           <p>
             {" "}
             Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde

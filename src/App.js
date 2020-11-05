@@ -32,7 +32,7 @@ function App() {
         <Fade left>
           <Contact />
         </Fade>
-        <Fade up>
+        <Fade>
           <Footer />
         </Fade>
       </div>

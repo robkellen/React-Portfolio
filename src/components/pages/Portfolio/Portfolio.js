@@ -26,9 +26,9 @@ class Portfolio extends Component {
                     key={project.id}
                     name={project.name}
                     image={project.image}
-                    description={project.description}
-                    gitRepo={project.gitRepo}
-                    liveApp={project.liveApp}
+                    // description={project.description}
+                    // gitRepo={project.gitRepo}
+                    // liveApp={project.liveApp}
                   />
                 ))}
               </Row>
