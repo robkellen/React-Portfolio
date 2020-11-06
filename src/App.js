@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Fade from "react-reveal/Fade";
-import { Container } from "react-bootstrap";
+
 
 //importing all necessary components
 import Home from "../src/components/pages/Home/Home";
