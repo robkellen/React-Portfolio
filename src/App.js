@@ -31,8 +31,9 @@ function App() {
       <div id="contact">
         <Fade left>
           <Contact />
+          
         </Fade>
-        <Fade>
+        <Fade up>
           <Footer />
         </Fade>
       </div>

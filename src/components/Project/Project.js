@@ -10,7 +10,7 @@ function Project(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <Col className="col sm-4 mb-4">
+    <Col className="col-sm mb-4">
       <Card
         className="project-card text-center h-100"
         style={{ width: "21rem" }}
@@ -42,7 +42,7 @@ function Project(props) {
         </Modal.Header>
         <div className="modal-body">
           <img
-            className="img-responsive img-center h-100 w-100"
+            className="img-center h-100 w-100"
             src={props.image}
             alt={props.name}
           />

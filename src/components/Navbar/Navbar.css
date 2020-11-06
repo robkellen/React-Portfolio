@@ -12,6 +12,7 @@
 .navbar {
   z-index: 99;
   background-color: rgb(1, 53, 91, 0);
+  margin-bottom: 15px;
 }
 
 #brand {

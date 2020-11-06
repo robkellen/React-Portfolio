@@ -5,7 +5,10 @@ import ContactForm from "../../ContactForm/ContactForm";
 
 function Contact() {
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#01355b" }}>
+    <div
+      className="contact"
+      style={{ minHeight: "100vh", backgroundColor: "#01355b" }}
+    >
       <Container className="container">
         <Row className="row">
           <Col className="card col-md-4">
