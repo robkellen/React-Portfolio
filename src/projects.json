@@ -38,5 +38,11 @@
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/robkellen/Fitness-Tracker",
     "liveApp": "https://arcane-stream-21231.herokuapp.com/?id=5f7a5f5ec74b2f0017f6bd2e"
+  },
+  {
+    "id": 6,
+    "name": "Resume",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1604691539/Robert_Kellen_Resume_eutxt2.pdf",
+    "description": "My work history."
   }
 ]

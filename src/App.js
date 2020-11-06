@@ -19,7 +19,7 @@ function App() {
       </div>
       <Navbar />
       <div>
-        <Fade up>
+        <Fade down>
           <About />
         </Fade>
       </div>

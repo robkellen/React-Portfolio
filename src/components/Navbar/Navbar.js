@@ -9,7 +9,7 @@ function Navbar() {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   //using state to make navbar "sticky" once it appears
   const [barVisibility, setBarVisibility] = useState(false);
-  const [scrollPosition, setSrollPosition] = useState(0);
+  const [scrollPosition, setSrollPosition] = useState(0); // eslint-disable-line
   const handleScroll = () => {
     const position = window.pageYOffset;
     position >= 900 ? setBarVisibility(true) : setBarVisibility(false);
