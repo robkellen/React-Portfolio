@@ -12,7 +12,7 @@ function Footer() {
         {/* Link to LinkedIn */}
         <ul className="list-group list-group-horizontal">
           <a
-            href="http://linkedin.com/in/robert-kellen-90a3951aa"
+            href="http://linkedin.com/in/robert-kellen"
             target="_blank"
             rel="noopener noreferrer"
           >
