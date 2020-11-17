@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import Fade from "react-reveal/Fade";
 
-
 //importing all necessary components
 import Home from "../src/components/pages/Home/Home";
 import About from "../src/components/pages/About/About";
@@ -24,14 +23,13 @@ function App() {
         </Fade>
       </div>
       <div>
-        <Fade up>
+        <Fade right>
           <Portfolio />
         </Fade>
       </div>
       <div id="contact">
         <Fade left>
           <Contact />
-          
         </Fade>
         <Fade up>
           <Footer />

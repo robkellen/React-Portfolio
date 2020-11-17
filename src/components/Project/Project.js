@@ -21,13 +21,6 @@ function Project(props) {
           alt={props.name}
           onClick={handleShow}
         />
-        {/* <div className="card-body">
-          <h5 className="card-title">{props.name}</h5> */}
-        {/* <p className="card-text">
-          {props.description}
-        </p> */}
-
-        {/* </div> */}
       </Card>
       <Modal
         show={show}
@@ -47,22 +40,24 @@ function Project(props) {
             alt={props.name}
           />
           <p>
-            {" "}
-            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-            ipsam atque a dolores quisquam quisquam adipisci possimus
-            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-            deleniti rem!
+            {props.description}
           </p>
           <div className="modal-footer">
-            <a href={props.liveApp} rel="noopener noreferrer" target="_blank">
-              Try out the live version
+            <a
+              id="live-link"
+              href={props.liveApp}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span>Link to {props.appName} {props.app}</span>
             </a>
-
-            <a rel="noopener noreferrer" href={props.gitRepo} target="_blank">
-              Link to {props.name} GitHub Repository
+            <a
+              id="repo-link"
+              rel="noopener noreferrer"
+              href={props.gitRepo}
+              target="_blank"
+            >
+              {props.linkTo} {props.name} {props.repo}
             </a>
           </div>
         </div>

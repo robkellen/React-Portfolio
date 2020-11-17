@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import "./Home.css"
+import { Row, Container, Col } from "react-bootstrap";
+import "./Home.css";
 
 function Home() {
   //set up animation for main part of page
@@ -8,7 +9,15 @@ function Home() {
 
   return (
     <div className="home">
-      <animated.h1 style={props}>Home!</animated.h1>
+      <Container>
+        <Row>
+          <Col>
+            <animated.h1 className="h1" style={props}>
+              Home!
+            </animated.h1>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

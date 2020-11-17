@@ -37,14 +37,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   height: 196px;
-  width: 318px;
+  width: 300px;
 }
 
 .text-center {
   padding-right: 0 !important;
 }
 
-/* .modal {
-  max-width:calc(100% - 80px);
-  max-height:calc(100% - 80px);
-} */
+#live-link {
+  margin-right: auto;
+}
