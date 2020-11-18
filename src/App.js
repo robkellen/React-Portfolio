@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 //importing all necessary components
 import Home from "../src/components/pages/Home/Home";
