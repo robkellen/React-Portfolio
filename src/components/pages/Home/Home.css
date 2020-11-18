@@ -19,10 +19,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+
+#colorful {
+  color: #e43666;
+  margin-left: 5px;
 }
 
 .h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: whitesmoke;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  border-radius: 2px;
+  background-color: whitesmoke;
+  border-color: #e43666;
+  border-width: 2px;
+  color: #e43666;
+}
+
+.btn:hover span {
+  display: none;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+
+.btn:hover {
+  background-color: #e43666;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.btn:hover::after {
+  transition-delay: 0.1s;
+  transition: 0.1s;
+  content: "View My Work ↓";
+  color: whitesmoke;
+}
+
+.btn-primary:active {
+  border-radius: 2px;
+  background: whitesmoke;
+  border-color: #e43666;
+  border-width: 2px;
+  color: #e43666;
+}
+
+.btn-primary:active::after {
+  border-radius: 2px;
+  background: whitesmoke;
+  border-color: #e43666;
+  border-width: 2px;
+  color: #e43666;
 }

@@ -28,7 +28,7 @@ function Navbar() {
     <div id="topBar" className={barVisibility ? "showBar" : "hideBar"}>
       <nav className="navbar navbar-expand-lg navbar-light trn fixed-top">
         <span className="navbar-brand mb-1 h1">
-          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="home" spy={true} smooth={true} offset={50} duration={700}>
             <img id ="brand" src={brandLogo} alt="BrandLogo" />
           </Link>
         </span>
@@ -56,8 +56,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={50}
-                duration={500}
-                // activeClassName="selected"
+                duration={700}
                 style={{
                   color: "#0b8911",
                   fontWeight: 300,
@@ -76,8 +75,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={50}
-                duration={500}
-                // activeClassName="selected"
+                duration={700}
                 style={{
                   color: "#0b8911",
                   fontWeight: 300,
@@ -96,8 +94,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={50}
-                duration={500}
-                // activeClassName="selected"
+                duration={700}
                 style={{
                   color: "#0b8911",
                   fontWeight: 300,
