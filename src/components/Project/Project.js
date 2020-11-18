@@ -18,7 +18,7 @@ function Project(props) {
         <img
           src={props.image}
           className="card-img-top"
-          alt={props.name}
+          alt={props.title}
           onClick={handleShow}
         />
       </Card>
@@ -31,7 +31,7 @@ function Project(props) {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="custom-modal">{props.name}</Modal.Title>
+          <Modal.Title id="custom-modal">{props.title}</Modal.Title>
         </Modal.Header>
         <div className="modal-body">
           <img

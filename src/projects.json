@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "CampK9",
+    "title": "CampK9",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1604509720/CampK9_w5jmsd.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/Dmelcher16/camp",
@@ -12,6 +13,7 @@
   {
     "id": 2,
     "name": "GameTracker",
+    "title": "GameTracker",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1604509505/GameTracker_x21ibo.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/robkellen/GameTracker",
@@ -22,6 +24,7 @@
   {
     "id": 3,
     "name": "Employee Directory",
+    "title": "Employee Directory",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510115/EmployeeDirectory_vgzxhi.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/robkellen/Employee-Directory",
@@ -32,6 +35,7 @@
   {
     "id": 4,
     "name": "Budget Tracker",
+    "title": "Budget Tracker",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510467/BudgetTracker_cjkdbs.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/robkellen/Budget-Tracker",
@@ -42,6 +46,7 @@
   {
     "id": 5,
     "name": "Fitness Tracker",
+    "title": "Fitness Tracker",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1604510865/FitnessTracker_lo4yvu.png",
     "description": "This application allows users to maintain a database of their personal games across all platforms.  This is a full-stack web application designed using the MVC paradigm with server-side API.",
     "gitRepo": "https://github.com/robkellen/Fitness-Tracker",
@@ -51,6 +56,7 @@
   },
   {
     "id": 6,
+    "title": "Resume",
     "appName": "Resume",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1605724329/Robert_Kellen_Resume_ehlhbi.png",
     "description": "My work history.",

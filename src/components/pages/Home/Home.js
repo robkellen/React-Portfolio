@@ -1,7 +1,7 @@
 import React from "react";
-import Fade from "react-reveal";
-import {Link} from "react-scroll"
-import { Row, Container, Col, Button } from "react-bootstrap";
+import { Reveal, Fade } from "react-reveal";
+import { Link } from "react-scroll";
+import { Row, Container, Col } from "react-bootstrap";
 import "./Home.css";
 
 function Home() {
@@ -11,27 +11,27 @@ function Home() {
         <Row id="main">
           <Col>
             <div className="h1">
-              <Fade>
+              <Reveal left delay={1000}>
                 Hello! I'm <span id="colorful"> Rob Kellen</span>.
-              </Fade>
+              </Reveal>
             </div>
-            <div>
-              <Fade left cascade delay={50000}>
-                <h3 className="h3">Full-Stack Web Developer</h3>
-              </Fade>
+            <div className="h3">
+              <Reveal left delay={2000} duration={2000}>
+                 Full-Stack Web Developer
+              </Reveal>
             </div>
             <div className="button">
-              <Fade delay={4000}>
+              <Fade delay={2000} duration={1500}>
                 <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={700}
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={700}
                 >
                   <button className="btn">
                     <span>
-                      View My Work <span id="arrow">→</span>
+                      Get To Know Me <span id="arrow">→</span>
                     </span>
                   </button>
                 </Link>
