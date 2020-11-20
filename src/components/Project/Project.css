@@ -11,6 +11,11 @@ img {
   max-height: calc(100% - 80px);
 }
 
+/* .col mb-4 {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 .card {
   overflow: hidden;
   transition: 0.3s;
@@ -33,7 +38,7 @@ img {
 }
 
 .img-center {
-  display: block;
+  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   height: 196px;

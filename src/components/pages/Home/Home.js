@@ -29,7 +29,7 @@ function Home() {
                   offset={50}
                   duration={700}
                 >
-                  <button className="btn">
+                  <button id="btn" className="btn">
                     <span>
                       Get To Know Me <span id="arrow">→</span>
                     </span>

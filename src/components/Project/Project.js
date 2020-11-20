@@ -10,10 +10,10 @@ function Project(props) {
   const handleShow = () => setShow(true);
 
   return (
-    <Col className="col-sm mb-4">
+    <Col md={4} className="mb-4">
       <Card
         className="project-card text-center h-100"
-        style={{ width: "21rem" }}
+        // style={{ width: "21rem" }}
       >
         <img
           src={props.image}
@@ -39,9 +39,7 @@ function Project(props) {
             src={props.image}
             alt={props.name}
           />
-          <p>
-            {props.description}
-          </p>
+          <p>{props.description}</p>
           <div className="modal-footer">
             <a
               id="live-link"
@@ -49,7 +47,9 @@ function Project(props) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span>Link to {props.appName} {props.app}</span>
+              <span>
+                Link to {props.appName} {props.app}
+              </span>
             </a>
             <a
               id="repo-link"

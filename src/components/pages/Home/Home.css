@@ -61,7 +61,7 @@
   color: whitesmoke;
 }
 
-.btn:hover::after {
+#btn:hover::after {
   transition-delay: 0.1s;
   transition: 0.1s;
   content: "Get To Know Me ↓";

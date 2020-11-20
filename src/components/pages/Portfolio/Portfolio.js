@@ -14,12 +14,12 @@ class Portfolio extends Component {
     return (
       <div id="portfolio" style={{ minHeight: "100vh" }}>
         <Container className="container">
-          <Row id="main-row" className="row d-flex justify-content-center">
-            <Col id="main-col" className="col-sm">
+          <Row id="main-row" className="row d-flex">
+            <Col id="main-col" className="col-xs">
               <div className="main-header">
                 <h1 className="card-title ">My Work:</h1>
               </div>
-              <Row>
+              <Row id="card-row" className="justify-content-center">
                 {this.state.projects.map((project) => (
                   <Project
                     id={project.id}

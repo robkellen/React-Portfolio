@@ -7,11 +7,11 @@ function Contact() {
   return (
     <div
       className="contact"
-      style={{ minHeight: "100vh", backgroundColor: "#01355b" }}
+      style={{ minHeight: "100vh", backgroundColor: "#BCD0CE" }}
     >
       <Container className="container">
-        <Row className="row">
-          <Col className="card col-md-4">
+        <Row className="row justify-content-md-center">
+          {/* <Col className="card col-md-4">
             <div className="card-header">
               <h2>Rob Kellen</h2>
             </div>
@@ -52,8 +52,8 @@ function Contact() {
               </li>
               <br />
             </ul>
-          </Col>
-          <Col className="card">
+          </Col> */}
+          <Col className="card col-md-8">
             <div className="card-header">
               <h2>Contact</h2>
             </div>

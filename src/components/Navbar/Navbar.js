@@ -29,7 +29,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light trn fixed-top">
         <span className="navbar-brand mb-1 h1">
           <Link to="home" spy={true} smooth={true} offset={50} duration={700}>
-            <img id ="brand" src={brandLogo} alt="BrandLogo" />
+            <img id="brand" src={brandLogo} alt="BrandLogo" />
           </Link>
         </span>
         <button
@@ -57,13 +57,6 @@ function Navbar() {
                 smooth={true}
                 offset={50}
                 duration={700}
-                style={{
-                  color: "#0b8911",
-                  fontWeight: 300,
-                  fontSize: "20px",
-                  float: "right",
-                }}
-                
               >
                 About
               </Link>
@@ -76,13 +69,6 @@ function Navbar() {
                 smooth={true}
                 offset={50}
                 duration={700}
-                style={{
-                  color: "#0b8911",
-                  fontWeight: 300,
-                  fontSize: "20px",
-                  float: "right",
-                }}
-                
               >
                 Projects
               </Link>
@@ -95,13 +81,6 @@ function Navbar() {
                 smooth={true}
                 offset={50}
                 duration={700}
-                style={{
-                  color: "#0b8911",
-                  fontWeight: 300,
-                  fontSize: "20px",
-                  float: "right",
-                }}
-                
               >
                 Contact
               </Link>

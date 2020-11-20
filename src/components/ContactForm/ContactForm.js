@@ -86,7 +86,7 @@ class ContactForm extends Component {
             required="Please don't leave me hanging!  Enter a message you wish to send."
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn">
           Submit
         </button>
       </Form>

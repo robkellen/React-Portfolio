@@ -11,8 +11,10 @@
 
 .navbar {
   z-index: 99;
-  background-color: rgb(1, 53, 91, 0);
+  background-color: rgb(3, 1, 50, 0.95);
   margin-bottom: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #brand {
@@ -20,13 +22,12 @@
   border-radius: 10px;
   margin: 0 auto;
 
- 
   transition: 0.2s;
 }
 
 #brand:hover {
   transform: scale(1.07);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 /*shifting page links to the right of the navbar*/
 .navbar-right {
@@ -38,17 +39,30 @@
   cursor: pointer;
   overflow: hidden;
   transition: 0.1s;
+  color: #e43666;
+  font-weight: 300;
+  font-size: 20px;
+  float: right;
 }
 
 .navLink:hover {
-  transform:scale(1.05);
+  transform: scale(1.05);
+  color: #e43666;
+}
+
+.navLink:active {
+  color: #e43666;
+}
+
+.navLink:active::after {
+  color: #e43666;
 }
 
 .navbar-toggler {
-  color: #0b8911 !important;
-  border-color: #0b8911 !important;
+  color: #e43666 !important;
+  border-color: #e43666 !important;
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(11, 137, 17, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(228, 54, 102, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
