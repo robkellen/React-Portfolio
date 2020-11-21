@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { Fade } from "react-reveal";
 
 //importing all necessary components
 import Home from "../src/components/pages/Home/Home";
@@ -16,24 +15,18 @@ function App() {
       <div style={{ minHeight: "100vh" }}>
         <Home />
       </div>
-      <Navbar />
+      
+        <Navbar />
+      
       <div>
-        <Fade down>
-          <About />
-        </Fade>
+        <About />
       </div>
       <div>
-        <Fade right>
-          <Portfolio />
-        </Fade>
+        <Portfolio />
       </div>
       <div id="contact">
-        <Fade left>
-          <Contact />
-        </Fade>
-        <Fade up>
-          <Footer />
-        </Fade>
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 .about {
-  /* background-color: #01355b; */
+  padding-top: 50px;
   min-height: 110vh;
+  background-color: lightslategray;
 }
