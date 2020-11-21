@@ -1,6 +1,6 @@
 .fa {
   font-size: 36px;
-  color: #0b8911;
+  color:#e43666;
 }
 
 .connect {
@@ -8,8 +8,8 @@
 }
 
 #sticky-footer {
-  background-color: #9a9a9a;
-  border-top: 10px solid #0b8911;
+  background-color:lightslategray;
+  border-top: 10px solid#e43666;
   flex-shrink: 0;
   bottom: 0;
   width: 100vw;
@@ -17,7 +17,6 @@
 }
 /*centering text and icons in footer*/
 .text-center {
-  color: #01355b;
   margin-top: 0;
   padding-right: 10px;
 }

@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div
       className="contact"
-      style={{ minHeight: "100vh", backgroundColor: "#BCD0CE" }}
+      
     >
       <Container className="container">
         <Row className="row justify-content-md-center">

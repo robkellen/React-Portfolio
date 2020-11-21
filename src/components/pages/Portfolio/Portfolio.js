@@ -12,7 +12,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div id="portfolio" style={{ minHeight: "100vh" }}>
+      <div id="portfolio">
         <Container className="container">
           <Row id="main-row" className="row d-flex">
             <Col id="main-col" className="col-xs">
