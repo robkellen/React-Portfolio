@@ -5,6 +5,26 @@
   background-color: #030132;
 }
 
+h1 {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 3px solid;
+}
+
+#contact-title {
+  color: whitesmoke;
+}
+
 .card {
   display: flex;
   

@@ -1,17 +1,21 @@
 import React from "react";
+import Fade from "react-reveal";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Contact.css";
 import ContactForm from "../../ContactForm/ContactForm";
+import "./Contact.css";
 
 function Contact() {
   return (
-    <div
-      className="contact"
-      
-    >
+    <div className="contact">
       <Container className="container">
-        <Row className="row justify-content-md-center">
-          {/* <Col className="card col-md-4">
+        <Row className="justify-content-center">
+          <Fade left>
+            <h1 id="contact-title">Contact</h1>
+          </Fade>
+        </Row>
+        <Fade right>
+          <Row className="row justify-content-md-center">
+            {/* <Col className="card col-md-4">
             <div className="card-header">
               <h2>Rob Kellen</h2>
             </div>
@@ -53,13 +57,14 @@ function Contact() {
               <br />
             </ul>
           </Col> */}
-          <Col className="card col-md-8">
-            <div className="card-header">
-              <h2>Contact</h2>
-            </div>
-            <ContactForm />
-          </Col>
-        </Row>
+            <Col className="card col-md-8">
+              <div className="card-header">
+                <h2>Wish to connect or work together?</h2>
+              </div>
+              <ContactForm />
+            </Col>
+          </Row>
+        </Fade>
       </Container>
     </div>
   );

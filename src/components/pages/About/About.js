@@ -9,7 +9,7 @@ function About() {
       
         <Row className="justify-content-center">
           <Fade right delay={4000}>
-            About!
+            <h1>About!</h1>
           </Fade>
         </Row>
       

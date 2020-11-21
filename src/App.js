@@ -15,9 +15,7 @@ function App() {
       <div style={{ minHeight: "100vh" }}>
         <Home />
       </div>
-      
-        <Navbar />
-      
+      <Navbar />
       <div>
         <About />
       </div>
