@@ -15,7 +15,7 @@ class Portfolio extends Component {
     return (
       <div id="portfolio">
         <Container className="container">
-          <Row id="main-row" className="justify-content-center d-flex">
+          <Row id="portfolio-title" className="justify-content-center d-flex">
             <Fade left>
               <h1 className="card-title ">My Work:</h1>
             </Fade>

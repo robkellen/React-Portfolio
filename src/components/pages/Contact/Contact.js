@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className="contact">
       <Container className="container">
-        <Row className="justify-content-center">
+        <Row id="title-row" className="justify-content-center">
           <Fade left>
             <h1 id="contact-title">Contact</h1>
           </Fade>
