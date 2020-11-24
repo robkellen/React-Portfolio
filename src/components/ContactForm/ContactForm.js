@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import { Form } from "react-bootstrap";
-import "./ContactForm.css"
+import "./ContactForm.css";
 
 class ContactForm extends Component {
   state = {
@@ -22,12 +22,14 @@ class ContactForm extends Component {
       message: message,
     };
 
-    emailjs.send(
-      "service_yak3rdl",
-      "template_vqw5wrf",
-      templateParams,
-      "user_ycWISB282COpelEg2Suw2"
-    ).then(alert("Your message has been sent!"));
+    emailjs
+      .send(
+        "service_yak3rdl",
+        "template_vqw5wrf",
+        templateParams,
+        "user_ycWISB282COpelEg2Suw2"
+      )
+      .then(alert("Your message has been sent!"));
 
     this.resetForm();
   }
@@ -48,12 +50,11 @@ class ContactForm extends Component {
     return (
       <Form onSubmit={this.sendMessage.bind(this)}>
         <div className="form-group">
-          <label className="label" htmlFor="exampleInputEmail1">Name</label>
           <input
             type="text"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder="Your Name"
+            placeholder="Name"
             name="from_name"
             value={this.state.name}
             onChange={this.handleInputChange.bind(this, "name")}
@@ -61,12 +62,11 @@ class ContactForm extends Component {
           />
         </div>
         <div className="form-group">
-          <label className="label" htmlFor="exampleFormControlInput1">Email address</label>
           <input
             type="email"
             className="form-control"
             id="exampleFormControlInput1"
-            placeholder="Email@email.com"
+            placeholder="Email"
             name="email"
             value={this.state.email}
             onChange={this.handleInputChange.bind(this, "email")}
@@ -74,7 +74,6 @@ class ContactForm extends Component {
           />
         </div>
         <div className="form-group">
-          <label className="label" htmlFor="exampleFormControlTextarea1">Message</label>
           <textarea
             className="form-control"
             id="exampleFormControlTextarea1"
@@ -86,7 +85,7 @@ class ContactForm extends Component {
             required="Please don't leave me hanging!  Enter a message you wish to send."
           ></textarea>
         </div>
-        <button type="submit" className="btn">
+        <button id="contact-button" type="submit" className="btn">
           Submit
         </button>
       </Form>
@@ -94,6 +93,6 @@ class ContactForm extends Component {
   }
 }
 
-// disabled={!(this.state.message && this.state.name && this.state.email)} 
+// disabled={!(this.state.message && this.state.name && this.state.email)}
 
 export default ContactForm;

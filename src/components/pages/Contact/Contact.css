@@ -22,15 +22,28 @@ h1:before {
 }
 
 #title-row {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 #contact-title {
   color: whitesmoke;
 }
 
+#contact-card {
+  background-color: transparent;
+  border: none;
+}
+
 .card {
   display: flex;
-  
+}
+
+.card-header {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+  border-bottom: none;
+  background-color: transparent;
+  color: whitesmoke;
 }
