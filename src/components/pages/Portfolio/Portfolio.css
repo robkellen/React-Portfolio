@@ -1,6 +1,9 @@
 #portfolio {
   padding-top: 50px;
+  padding-bottom: 70px;
+  margin-bottom: -50px;
   min-height: 100vh;
+  background-color: #81eff6;
 }
 
 #portfolio-title {

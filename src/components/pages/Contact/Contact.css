@@ -1,9 +1,11 @@
 .contact {
-  padding-top: 150px;
+  padding-top: 120px;
   margin-top: -30px;
   min-height: 100vh;
   background-color: #030132;
 }
+
+
 
 h1 {
   display: inline-block;
