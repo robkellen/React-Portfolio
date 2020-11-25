@@ -52,13 +52,25 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="navLink"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={700}
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="navLink"
                 to="about"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={700}
               >
-                About
+                ABOUT
               </Link>
             </li>
             <li className="nav-item">
@@ -70,7 +82,7 @@ function Navbar() {
                 offset={50}
                 duration={700}
               >
-                Projects
+                PORTFOLIO
               </Link>
             </li>
             <li className="nav-item">
@@ -82,7 +94,7 @@ function Navbar() {
                 offset={50}
                 duration={700}
               >
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>
