@@ -29,3 +29,7 @@
   position: relative;
   margin: auto;
 }
+
+.js {
+  background-color: transparent;
+}

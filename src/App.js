@@ -12,10 +12,12 @@ import Navbar from "../src/components/Navbar/Navbar";
 function App() {
   return (
     <div className="mainDiv">
-      <div style={{ minHeight: "100vh" }}>
+      <div >
         <Home />
       </div>
-      <Navbar />
+      <div className="nav">
+        <Navbar />
+      </div>
       <div>
         <About />
       </div>

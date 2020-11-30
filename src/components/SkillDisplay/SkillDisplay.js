@@ -1,19 +1,13 @@
-import React from 'react';
-import { Col, Card } from "react-bootstrap";
+import React from "react";
+import { Col } from "react-bootstrap";
 import "./SkillDisplay.css";
 
-function SkillDisplay(props) {
+function Skill(props) {
   return (
-    <Col>
-      <Card>
-        <img 
-        src={props.image}
-        alt={props.name}
-        className="card-img-top"
-        />
-      </Card>
+    <Col sm={6} className="skills">
+      <img src={props.image} alt={props.name} className="skill" />
     </Col>
-  )
+  );
 }
 
-export default SkillDisplay;  
+export default Skill;
