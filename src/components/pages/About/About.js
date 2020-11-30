@@ -12,15 +12,15 @@ function About() {
         </Fade>
       </Row>
       <Row className="justify-content-center">
-        <Col md={5} className="col-headers text-center">
+        <Col className="col-headers text-center">
           <Fade left>
             <h3>SKILLS</h3>
           </Fade>
         </Col>
-        <Col md={2} className="col-headers text-center">
+        <Col md={3} className="col-headers text-center">
           <h3>Placeholder</h3>
         </Col>
-        <Col md={5} className="col-headers text-center">
+        <Col className="col-headers text-center">
           <Fade right>
             <h3>PERSONAL</h3>
           </Fade>
