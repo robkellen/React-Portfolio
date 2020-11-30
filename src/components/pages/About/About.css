@@ -9,13 +9,13 @@
   margin-bottom: 30px;
 }
 
-h3 {
+.aboutH3 {
   display: inline-block;
   padding-bottom: 5px;
   position: relative;
 }
 
-h3:before {
+.aboutH3:before {
   content: "";
   position: absolute;
   width: 50%;

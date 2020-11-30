@@ -14,7 +14,7 @@ function About() {
       <Row className="justify-content-center">
         <Col className="col-headers text-center">
           <Fade left>
-            <h3>SKILLS</h3>
+            <h3 className="aboutH3">SKILLS</h3>
           </Fade>
         </Col>
         <Col md={3} className="col-headers text-center">
@@ -22,7 +22,7 @@ function About() {
         </Col>
         <Col className="col-headers text-center">
           <Fade right>
-            <h3>PERSONAL</h3>
+            <h3 className="aboutH3">PERSONAL</h3>
           </Fade>
         </Col>
       </Row>
