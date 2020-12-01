@@ -29,7 +29,7 @@ class About extends Component {
           </Col>
           <Col className="col-headers">
             <Fade right delay={1100}>
-              <p>
+              <p className="bio">
                 Full-stack web developer with a strong background of working and
                 leading teams in the hospitality industry. I earned a
                 certificate in full-stack development from the University of
@@ -50,12 +50,12 @@ class About extends Component {
                 while helping build creative and serviceable applications.
               </p>
               <br />
-              <p>
-                Along with my incredible wife and our two amazing daughters I
-                reside in Cave Creek, Arizona. When I'm not coding I like to
-                promote a balanced lifestyle. I am an avid golfer, hibernating
-                skier, world traveler, and a fiercely loyal follower of the
-                Blackhawks, Cubs, Bears, Bulls, and Liverpool FC.{" "}
+              <p className="bio">
+                I reside in Cave Creek, Arizona along with my incredible wife and
+                our two amazing daughters. When I'm not coding I like to promote
+                a balanced lifestyle. I am an avid golfer, hibernating skier,
+                world traveler, and a fiercely loyal follower of the Blackhawks,
+                Cubs, Bears, Bulls, and Liverpool FC.{" "}
               </p>
             </Fade>
           </Col>

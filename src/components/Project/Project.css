@@ -34,7 +34,9 @@ img {
 
 .modal-body {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
 .img-center {
