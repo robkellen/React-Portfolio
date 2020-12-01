@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import SkillDisplay from "../../SkillDisplay/SkillDisplay";
 import "./About.css";
 import skills from "../../../skills.json";
@@ -13,14 +13,14 @@ class About extends Component {
     return (
       <div id="about" className="about container-fluid">
         <Row id="about-main" className="justify-content-center">
-          <Fade right delay={4000}>
+          <Fade right big>
             <h1 className="blueH1">ABOUT</h1>
           </Fade>
         </Row>
 
         <Row id="info-section" className="justify-content-center">
           <Col md={12} lg={4} className="col-headers text-center">
-            <Fade left>
+            <Fade left delay={1100}>
               <img
                 src="https://res.cloudinary.com/robbiek/image/upload/v1606242001/Portfolio/image0_1_yzaxzc.jpg"
                 alt="me"
@@ -28,7 +28,7 @@ class About extends Component {
             </Fade>
           </Col>
           <Col className="col-headers">
-            <Fade right>
+            <Fade right delay={1100}>
               <p>
                 Full-stack web developer with a strong background of working and
                 leading teams in the hospitality industry. I earned a
@@ -61,7 +61,7 @@ class About extends Component {
           </Col>
         </Row>
         <Row id="skill-row" className="justify-content-center">
-          <Fade up delay={6000}>
+          <Fade up delay={2000}>
             {this.state.skills.map((skill) => (
               <SkillDisplay
                 id={skill.id}

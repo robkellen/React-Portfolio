@@ -1,5 +1,6 @@
 import React from "react";
-import { Reveal, Fade } from "react-reveal";
+import Reveal from "react-reveal/Reveal";
+import Fade from "react-reveal/Fade"
 import { Link } from "react-scroll";
 import { Row, Container, Col } from "react-bootstrap";
 import "./Home.css";
@@ -11,12 +12,12 @@ function Home() {
         <Row id="main">
           <Col>
             <div className="h1">
-              <Reveal left delay={1000}>
+              <Reveal left>
                 Hello! I'm <span id="colorful"> Rob Kellen</span>.
               </Reveal>
             </div>
             <div className="h3">
-              <Reveal left delay={2000} duration={2000}>
+              <Reveal right delay={1200}>
                  Full-Stack Web Developer
               </Reveal>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactForm from "../../ContactForm/ContactForm";
 import "./Contact.css";
