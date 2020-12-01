@@ -11,6 +11,8 @@ h1 {
   display: inline-block;
   padding-bottom: 5px;
   position: relative;
+  font-family: 'Blinker', sans-serif;
+  font-weight: 800;
 }
 
 h1:before {

@@ -20,6 +20,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  font-family: 'Blinker', sans-serif;
+  font-weight: 800;
 }
 
 #colorful {
@@ -32,6 +34,8 @@
   align-items: center;
   justify-content: center;
   color: whitesmoke;
+  font-family: 'Blinker', sans-serif;
+  font-weight: 800;
 }
 
 .button {
