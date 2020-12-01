@@ -16,29 +16,27 @@
   },
   {
     "id": "4",
-    "name": "Node JS",
-    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606775662/Portfolio/node-js_c9yka5.svg"
-  },
-  {
-    "id": "5",
     "name": "React JS",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1606768487/Portfolio/react_ob4mmh.svg"
   },
   {
-    "id": "6",
+    "id": "5",
     "name": "MongoDB",
-    "image": "https://res.cloudinary.com/robbiek/image/upload/b_rgb:edeffb/v1606762913/Portfolio/mongodb_y6tmmq.png"
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606762913/Portfolio/mongodb_y6tmmq.png"
+  },
+  {
+    "id": "6",
+    "name": "MySQL",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606769321/Portfolio/mysql_f0y5yv.svg"
   },
   {
     "id": "7",
-    "name": "Express JS",
-    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606768946/Portfolio/express_inedxq.svg"
+    "name": "Node JS",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606775662/Portfolio/node-js_c9yka5.svg"
   },
   {
     "id": "8",
-    "name": "MySQL",
-    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606769321/Portfolio/mysql_f0y5yv.svg"
+    "name": "Express JS",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606768946/Portfolio/express_inedxq.svg"
   }
-  
-  
 ]

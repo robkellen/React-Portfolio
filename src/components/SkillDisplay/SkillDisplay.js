@@ -4,7 +4,7 @@ import "./SkillDisplay.css";
 
 function Skill(props) {
   return (
-    <Col sm={6} className="skills">
+    <Col className="skills">
       <img src={props.image} alt={props.name} className="skill" />
     </Col>
   );

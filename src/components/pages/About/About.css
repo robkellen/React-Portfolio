@@ -1,35 +1,13 @@
 .about {
   padding-top: 50px;
   min-height: 110vh;
-  background-color: #edeffb;
+  /* background-size: cover; */
+  background: #edeffb ;
 }
+
+
 
 #about-main {
   margin-top: 100px;
   margin-bottom: 30px;
-}
-
-.aboutH3 {
-  display: inline-block;
-  padding-bottom: 5px;
-  position: relative;
-}
-
-.aboutH3:before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  bottom: 0;
-  left: 25%;
-  border-bottom: 3px solid;
-}
-
-.col-headers {
-  position: relative;
-  margin: auto;
-}
-
-.js {
-  background-color: transparent;
 }
