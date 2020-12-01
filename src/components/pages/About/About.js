@@ -46,8 +46,12 @@ class About extends Component {
                 between a creative front-end user experience and an efficient
                 and secure back-end is supported by my unwavering work ethic. I
                 am excited to join a like-minded team to apply and build upon my
-                existing knowledge, and help build creative and serviceable
+                existing skillset while helping build creative and serviceable
                 applications.
+              </p>
+              <br/>
+              <p>
+                When I'm not coding
               </p>
             </Fade>
           </Col>

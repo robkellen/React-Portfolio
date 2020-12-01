@@ -38,5 +38,10 @@
     "id": "8",
     "name": "Express JS",
     "image": "https://res.cloudinary.com/robbiek/image/upload/v1606768946/Portfolio/express_inedxq.svg"
+  },
+  {
+    "id": "9",
+    "name": "Bootstrap",
+    "image": "https://res.cloudinary.com/robbiek/image/upload/v1606785060/Portfolio/bootstrap_scgcbc.svg"
   }
 ]
