@@ -25,7 +25,7 @@ function Contact() {
             href="mailto:rob.h.kellen@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-          >rob.h.kellen@gmail.com</a></h3>
+          ><span id="email-link">rob.h.kellen@gmail.com</span></a></h3>
             </Col>
           </Row>
           {/* <Row className="row justify-content-md-center align-items-center">

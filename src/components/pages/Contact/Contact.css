@@ -5,13 +5,11 @@
   background-color: #030132;
 }
 
-
-
 h1 {
   display: inline-block;
   padding-bottom: 5px;
   position: relative;
-  font-family: 'Blinker', sans-serif;
+  font-family: "Blinker", sans-serif;
   font-weight: 800;
 }
 
@@ -55,4 +53,8 @@ h1:before {
 #email-address {
   text-align: center;
   padding-bottom: 20px;
+}
+
+#email-link {
+  color: #e43666;
 }
