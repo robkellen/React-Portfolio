@@ -26,8 +26,8 @@ function App() {
       </div>
       <div id="contact">
         <Contact />
-        <Footer />
       </div>
+        <Footer />
     </div>
   );
 }

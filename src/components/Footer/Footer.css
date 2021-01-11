@@ -13,7 +13,7 @@
   flex-shrink: 0;
   bottom: 0;
   width: 100vw;
-  margin-top: -90px;
+  /* margin-top: -80px; */
 }
 /*centering text and icons in footer*/
 .text-center {

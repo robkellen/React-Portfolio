@@ -17,11 +17,22 @@ function Contact() {
           <Row className="row justify-content-md-center align-items-center">
             <Col id="contact-card" className="card col-md-8">
               <div className="card-header">
-                <h3>Wish to connect or work together?</h3>
+                <h3>Wish to connect or work together?  
+                  Send me a message...</h3>
               </div>
               <ContactForm />
+              <h3 className="card-header">...or email me at: <a
+            href="mailto:rob.h.kellen@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >rob.h.kellen@gmail.com</a></h3>
             </Col>
           </Row>
+          {/* <Row className="row justify-content-md-center align-items-center">
+            <Col id="email-address" >
+            
+            </Col>
+          </Row> */}
         </Fade>
       </Container>
     </div>
