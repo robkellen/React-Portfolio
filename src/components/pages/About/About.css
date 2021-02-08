@@ -18,9 +18,21 @@
 
 .bio {
   color: #030132;
-  font-size: 22px;
-  margin-right: 20px;
+  font-size: 24px;
+  margin-right: 40px;
+  margin-left: 40px;
   font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+#headshot {
+  border-radius: 15%;
+  float: left;
+  margin-top: 7px;
+  margin-left: 40px;
+  padding-right: 15px;
+  
 }
 
 #info-section {

@@ -19,15 +19,14 @@ class About extends Component {
         </Row>
 
         <Row id="info-section" className="justify-content-center">
-          <Col md={12} lg={4} className="col-headers text-center">
+          <Col sm className="col-headers text-center">
             <Fade left delay={1100}>
               <img
                 src="https://res.cloudinary.com/robbiek/image/upload/v1606242001/Portfolio/image0_1_yzaxzc.jpg"
-                alt="me"
+                alt="Headshot"
+                id="headshot"
               />
             </Fade>
-          </Col>
-          <Col className="col-headers">
             <Fade right delay={1100}>
               <p className="bio">
                 Full-stack web developer with a strong background of working and
@@ -51,11 +50,11 @@ class About extends Component {
               </p>
               <br />
               <p className="bio">
-                I reside in Cave Creek, Arizona along with my incredible wife and
-                our two amazing daughters. When I'm not coding I like to promote
-                a balanced lifestyle. I am an avid golfer, hibernating skier,
-                world traveler, and a fiercely loyal follower of the Blackhawks,
-                Cubs, Bears, Bulls, and Liverpool FC.{" "}
+                I reside in Cave Creek, Arizona along with my incredible wife
+                and our two amazing daughters. When I'm not coding I like to
+                promote a balanced lifestyle. I am an avid golfer, hibernating
+                skier, world traveler, and a fiercely loyal follower of the
+                Blackhawks, Cubs, Bears, Bulls, and Liverpool FC.{" "}
               </p>
             </Fade>
           </Col>
