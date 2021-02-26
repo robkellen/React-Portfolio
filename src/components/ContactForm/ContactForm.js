@@ -28,6 +28,14 @@ class ContactForm extends Component {
 
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      )
       .then(alert("Your message has been sent!"));
 
     this.resetForm();
