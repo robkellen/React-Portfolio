@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-import { init } from "emailjs-com";
 import { Form } from "react-bootstrap";
 import "./ContactForm.css";
 
@@ -8,7 +7,6 @@ const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_USER_ID;
 
-init(USER_ID);
 class ContactForm extends Component {
   state = {
     name: "",
@@ -29,7 +27,7 @@ class ContactForm extends Component {
     };
 
     emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, templateParams, `${USER_ID}`)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID )
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
@@ -41,6 +39,7 @@ class ContactForm extends Component {
       .then(alert("Your message has been sent!"));
 
     this.resetForm();
+    console.log(USER_ID);
   }
 
   resetForm() {
