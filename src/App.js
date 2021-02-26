@@ -12,7 +12,7 @@ import Navbar from "../src/components/Navbar/Navbar";
 function App() {
   return (
     <div className="mainDiv">
-      <div >
+      <div>
         <Home />
       </div>
       <div className="nav">
@@ -27,7 +27,7 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 }

@@ -11,20 +11,21 @@ class ContactForm extends Component {
   };
 
   sendMessage(e) {
+    const { SERVICE_ID } = process.env.REACT_APP_SERVICE_ID;
     e.preventDefault();
 
     const { name, email, message } = this.state;
 
     let templateParams = {
       from_name: name,
-      to_name: "service_yak3rdl",
+      to_name: { SERVICE_ID },
       from_email: email,
       message: message,
     };
 
     emailjs
       .send(
-        "service_yak3rdl",
+        { SERVICE_ID },
         "template_vqw5wrf",
         templateParams,
         "user_ycWISB282COpelEg2Suw2"
@@ -92,7 +93,5 @@ class ContactForm extends Component {
     );
   }
 }
-
-// disabled={!(this.state.message && this.state.name && this.state.email)}
 
 export default ContactForm;
