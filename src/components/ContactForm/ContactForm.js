@@ -5,7 +5,7 @@ import "./ContactForm.css";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-// const USER_ID = process.env.REACT_APP_USER_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 class ContactForm extends Component {
   state = {
@@ -27,7 +27,7 @@ class ContactForm extends Component {
     };
 
     emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
       .then(alert("Your message has been sent!"));
 
     this.resetForm();
@@ -85,7 +85,7 @@ class ContactForm extends Component {
           ></textarea>
         </div>
         <button id="contact-button" type="submit" className="btn">
-          Submit
+          Send Message
         </button>
       </Form>
     );
