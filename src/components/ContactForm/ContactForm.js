@@ -3,6 +3,10 @@ import emailjs from "emailjs-com";
 import { Form } from "react-bootstrap";
 import "./ContactForm.css";
 
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+
 class ContactForm extends Component {
   state = {
     name: "",
@@ -11,25 +15,19 @@ class ContactForm extends Component {
   };
 
   sendMessage(e) {
-    const { SERVICE_ID } = process.env.REACT_APP_SERVICE_ID;
     e.preventDefault();
 
     const { name, email, message } = this.state;
 
     let templateParams = {
       from_name: name,
-      to_name: { SERVICE_ID },
+      to_name: SERVICE_ID,
       from_email: email,
       message: message,
     };
 
     emailjs
-      .send(
-        { SERVICE_ID },
-        "template_vqw5wrf",
-        templateParams,
-        "user_ycWISB282COpelEg2Suw2"
-      )
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
       .then(alert("Your message has been sent!"));
 
     this.resetForm();
