@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
+import { init } from "emailjs-com";
 import { Form } from "react-bootstrap";
 import "./ContactForm.css";
 
@@ -13,6 +14,10 @@ class ContactForm extends Component {
     email: "",
     message: "",
   };
+
+  componentDidMount() {
+    init(USER_ID);
+  }
 
   sendMessage(e) {
     e.preventDefault();
