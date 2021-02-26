@@ -10,14 +10,11 @@ const USER_ID = process.env.REACT_APP_USER_ID;
 
 init(USER_ID);
 class ContactForm extends Component {
-
   state = {
     name: "",
     email: "",
     message: "",
   };
-
-  
 
   sendMessage(e) {
     e.preventDefault();
@@ -32,7 +29,7 @@ class ContactForm extends Component {
     };
 
     emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, `${USER_ID}`)
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
