@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import { Form } from "react-bootstrap";
 import "./ContactForm.css";
+import { init } from "emailjs-com";
+init("user_ycWISB282COpelEg2Suw2");
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -26,12 +28,7 @@ class ContactForm extends Component {
     };
 
     emailjs
-      .send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        templateParams,
-        "user_ycWISB282COpelEg2Suw2"
-      )
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
