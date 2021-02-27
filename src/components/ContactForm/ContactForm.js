@@ -3,11 +3,11 @@ import emailjs from "emailjs-com";
 import { Form } from "react-bootstrap";
 import "./ContactForm.css";
 import { init } from "emailjs-com";
-init(USER_ID);
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const USER_ID = process.env.USER_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
+init(USER_ID);
 
 class ContactForm extends Component {
   state = {
@@ -32,15 +32,17 @@ class ContactForm extends Component {
       .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
       .then(
         function (response) {
+          alert("Your message has been sent!");
           console.log("SUCCESS!", response.status, response.text);
         },
         function (error) {
           console.log("FAILED...", error);
         }
       )
-      .then(alert("Your message has been sent!"));
+      // .then(alert("Your message has been sent!"));
 
     this.resetForm();
+    console.log(process.env.REACT_APP_USER_ID)
   }
 
   resetForm() {
