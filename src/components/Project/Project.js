@@ -11,15 +11,13 @@ function Project(props) {
 
   return (
     <Col md={4} className="mb-4">
-      <Card
-        className="project-card text-center h-100"
-        // style={{ width: "21rem" }}
-      >
+      <Card className="project-card text-center h-100">
         <img
           src={props.image}
           className="card-img-top"
           alt={props.title}
           onClick={handleShow}
+          fluid="true"
         />
       </Card>
       <Modal

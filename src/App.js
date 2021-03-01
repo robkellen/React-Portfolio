@@ -15,9 +15,9 @@ function App() {
       <div>
         <Home />
       </div>
-      <div className="nav">
+      {/* <div className="nav"> */}
         <Navbar />
-      </div>
+      {/* </div> */}
       <div>
         <About />
       </div>

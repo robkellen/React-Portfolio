@@ -7,8 +7,9 @@
 }
 
 #portfolio-title {
-  margin-bottom: 30px;
-  margin-top: 20px
+  margin: 20px 0px 30px;
 }
 
-
+#main-col {
+  padding: 0px 50px;
+}
