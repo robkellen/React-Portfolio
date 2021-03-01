@@ -53,13 +53,5 @@
     "liveApp": "https://arcane-stream-21231.herokuapp.com/?id=5f7a5f5ec74b2f0017f6bd2e",
     "app": "Deployed Application",
     "repo": "GitHub Repository"
-  },
-  {
-    "id": 6,
-    "title": "Resume",
-    "appName": "Resume",
-    "image": "https://res.cloudinary.com/robbiek/image/upload/c_thumb,w_200,g_face/v1605724329/Portfolio/Robert_Kellen_Resume_ehlhbi.png",
-    "description": "My work history.",
-    "liveApp": "https://res.cloudinary.com/robbiek/image/upload/v1605724329/Robert_Kellen_Resume_ehlhbi.png"
   }
 ]

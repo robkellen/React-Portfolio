@@ -3,6 +3,7 @@ import Project from "../../Project/Project";
 import { Row, Col } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import projects from "../../../projects.json";
+import Resume from "../../Resume/Resume";
 import "./Portfolio.css";
 
 class Portfolio extends Component {
@@ -38,6 +39,7 @@ class Portfolio extends Component {
                   repo={project.repo}
                 />
               ))}
+              <Resume />
             </Row>
           </Col>
         </Fade>

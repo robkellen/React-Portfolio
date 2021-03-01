@@ -1,0 +1,16 @@
+div.card-footer {
+  background-color: #030132;
+  color: #e43666;
+  font-family: "Blinker", sans-serif;
+}
+
+.resume-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#resume-image {
+  /* width: 100%; */
+ 
+  object-fit: contain;
+}
