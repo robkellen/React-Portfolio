@@ -11,14 +11,14 @@ export default function Resume() {
     <Col md={4} className="mb-4">
       <Card className="resume-card text-center h-100">
         <img
-          src="https://res.cloudinary.com/robbiek/image/upload/c_thumb,w_200,g_face/v1605724329/Portfolio/Robert_Kellen_Resume_ehlhbi.png"
+          src="https://res.cloudinary.com/robbiek/image/upload/b_rgb:030132,c_pad,h_400,w_300/v1627078273/Resume.png"
           className="card-img-top"
           id="resume-image"
           alt="Resume"
           onClick={handleShow}
           fluid="true"
         />
-        <Card.Footer>VIEW MY RESUME</Card.Footer>
+        <Card.Footer><span id="resume-span" onClick={handleShow}>VIEW MY RESUME</span></Card.Footer>
       </Card>
       <Modal
         show={show}
@@ -35,7 +35,7 @@ export default function Resume() {
           <img
             className="img-center h-100 w-100"
             id="resume-image"
-            src="https://res.cloudinary.com/robbiek/image/upload/v1605724329/Portfolio/Robert_Kellen_Resume_ehlhbi.png"
+            src="https://res.cloudinary.com/robbiek/image/upload/c_fill/v1627078273/Resume.png"
             alt="Resume"
           />
           <div className="modal-footer">
@@ -46,6 +46,14 @@ export default function Resume() {
               target="_blank"
             >
               <span>View My LinkedIn Profile</span>
+            </a>
+            <a
+              id="resume-link"
+              href="https://docs.google.com/document/d/1k-0yEEsKQ4Ar4RK7W2V9WLNT41kfz5yOROG2zQHY7zQ/edit?usp=sharing"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span>View As Google Doc</span>
             </a>
           </div>
         </div>

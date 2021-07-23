@@ -10,7 +10,16 @@ div.card-footer {
 }
 
 #resume-image {
-  /* width: 100%; */
- 
+  padding: 10px 0px;
   object-fit: contain;
+  background-color: #030132;
+}
+
+#resume-link {
+  display: list-item;
+  list-style-type: none;
+}
+
+#resume-span:hover {
+  cursor: pointer;
 }
